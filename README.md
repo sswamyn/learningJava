@@ -13,6 +13,8 @@ A comprehensive workspace to (re)learn Java and practice new constructs. This re
 5. **CollectionsDemo.java** - Collections Framework and Generics (List, Set, Map)
 6. **ExceptionHandling.java** - Exception handling patterns and custom exceptions
 7. **ModernJavaFeatures.java** - Java 8+ features (lambdas, streams, Optional, functional interfaces)
+8. **Calculator.java** - Simple calculator with testable methods
+9. **SimpleTestDemo.java** - Basic testing demonstration (without external test frameworks)
 
 ## 🚀 Getting Started
 
@@ -67,6 +69,21 @@ java -cp bin com.learning.ExceptionHandling
 
 # Run Modern Java Features demo
 java -cp bin com.learning.ModernJavaFeatures
+
+# Run Calculator demo
+java -cp bin com.learning.Calculator
+
+# Run Simple Test demo
+java -cp bin com.learning.SimpleTestDemo
+```
+
+### Run All Examples
+
+To run all examples at once:
+
+```bash
+# On Linux/Mac:
+./run-all.sh
 ```
 
 ## 📖 Learning Path
@@ -89,7 +106,8 @@ java -cp bin com.learning.ModernJavaFeatures
 - Add new features to existing examples
 - Implement design patterns
 - Create multi-file projects
-- Add unit tests
+- Write tests for your code (see SimpleTestDemo.java for basic testing)
+- Learn JUnit for professional testing
 
 ## 🎯 Key Concepts Covered
 
@@ -99,6 +117,7 @@ java -cp bin com.learning.ModernJavaFeatures
 - **Collections**: ArrayList, HashSet, HashMap, Generics
 - **Exception Handling**: try-catch, custom exceptions, try-with-resources
 - **Modern Java**: Lambda expressions, Stream API, Optional, functional interfaces
+- **Testing**: Basic test writing and assertions
 
 ## 💡 Tips
 

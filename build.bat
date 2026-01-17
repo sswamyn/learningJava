@@ -21,6 +21,8 @@ if %errorlevel% equ 0 (
     echo   java -cp bin com.learning.CollectionsDemo
     echo   java -cp bin com.learning.ExceptionHandling
     echo   java -cp bin com.learning.ModernJavaFeatures
+    echo   java -cp bin com.learning.Calculator
+    echo   java -cp bin com.learning.SimpleTestDemo
 ) else (
     echo Build failed!
     exit /b 1

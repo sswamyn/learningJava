@@ -12,6 +12,7 @@ public class SimpleTestDemo {
     private static int testsRun = 0;
     private static int testsPassed = 0;
     private static int testsFailed = 0;
+    private static Calculator calc = new Calculator();
     
     public static void main(String[] args) {
         System.out.println("=== Running Simple Tests ===\n");
@@ -39,7 +40,6 @@ public class SimpleTestDemo {
     
     private static void testAddition() {
         testsRun++;
-        Calculator calc = new Calculator();
         int result = calc.add(5, 3);
         if (result == 8) {
             testsPassed++;
@@ -52,7 +52,6 @@ public class SimpleTestDemo {
     
     private static void testSubtraction() {
         testsRun++;
-        Calculator calc = new Calculator();
         int result = calc.subtract(10, 4);
         if (result == 6) {
             testsPassed++;
@@ -65,7 +64,6 @@ public class SimpleTestDemo {
     
     private static void testMultiplication() {
         testsRun++;
-        Calculator calc = new Calculator();
         int result = calc.multiply(6, 7);
         if (result == 42) {
             testsPassed++;
@@ -78,7 +76,6 @@ public class SimpleTestDemo {
     
     private static void testDivision() {
         testsRun++;
-        Calculator calc = new Calculator();
         double result = calc.divide(20, 4);
         if (result == 5.0) {
             testsPassed++;
@@ -91,7 +88,6 @@ public class SimpleTestDemo {
     
     private static void testDivisionByZero() {
         testsRun++;
-        Calculator calc = new Calculator();
         try {
             calc.divide(10, 0);
             testsFailed++;
@@ -104,10 +100,9 @@ public class SimpleTestDemo {
     
     private static void testIsEven() {
         testsRun++;
-        Calculator calc = new Calculator();
         boolean result1 = calc.isEven(8);
         boolean result2 = calc.isEven(7);
-        if (result1 == true && result2 == false) {
+        if (result1 && !result2) {
             testsPassed++;
             System.out.println("✓ testIsEven passed");
         } else {

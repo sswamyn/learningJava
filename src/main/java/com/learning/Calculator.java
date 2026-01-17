@@ -2,7 +2,7 @@ package com.learning;
 
 /**
  * Simple calculator class to demonstrate testable code.
- * Used for JUnit testing examples.
+ * Used with SimpleTestDemo for basic testing examples.
  */
 public class Calculator {
     
